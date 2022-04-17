@@ -11,7 +11,7 @@ const Treatments = () => {
             <div className=" container mx-auto mt-5 text-center">
                 <h4>WHAT I OFFER FOR YOU</h4>
                 <h1>Therapies & Treatments</h1>
-                <div className='row w-100 mx-auto'>
+                <div className='row w-100 mx-auto mt-5'>
                     {
                         treatments.map(treatment => <Treatment
                             key={treatment.id}

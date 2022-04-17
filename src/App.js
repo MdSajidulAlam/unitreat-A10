@@ -10,6 +10,7 @@ import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import Checkout from './Pages/Checkout/Checkout/Checkout';
 import TreatmentDetails from './Pages/TreatmentDetails/TreatmentDetails';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/treatmentdetails/:treatmentdetailsId' element={<TreatmentDetails></TreatmentDetails>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/checkout' element={
           <RequireAuth>
             <Checkout></Checkout>
