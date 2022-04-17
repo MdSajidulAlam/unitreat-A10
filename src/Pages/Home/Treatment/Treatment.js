@@ -1,13 +1,14 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-const Treatment = ({ treatment }) => {
-    const { name, price, picture, about } = treatment
+const Treatment = ({ treatment, displayTreatmentDetails }) => {
+    const { name, price, picture, about, id } = treatment
     const navigate = useNavigate()
 
     const navigateToTreatmentDetail = (id) => {
         navigate(`/treatmentdetails/${id}`)
+
     }
     return (
         <Card className='col-4' style={{ width: '18rem' }}>
@@ -17,7 +18,10 @@ const Treatment = ({ treatment }) => {
                 <Card.Text>
                     {about}
                 </Card.Text>
-                <Button onClick={navigateToTreatmentDetail} variant='primary'>Book Now</Button>
+                <Card.Text>
+                    Price: {price}
+                </Card.Text>
+                <Button onClick={() => navigateToTreatmentDetail(id)} variant='primary'>Book Now</Button>
             </Card.Body>
         </Card>
     );

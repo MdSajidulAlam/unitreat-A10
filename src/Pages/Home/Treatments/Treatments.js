@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useTreatments from '../../../hooks/useTreatments/useTreatments';
 import Treatment from '../Treatment/Treatment';
 
 const Treatments = () => {
-    const [treatments, setreatments] = useState([])
+    const [treatments] = useTreatments()
 
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setreatments(data))
-    }, [])
+
     return (
         <div id='treatments'>
             <div className=" container mx-auto mt-5 text-center">
@@ -19,6 +16,7 @@ const Treatments = () => {
                         treatments.map(treatment => <Treatment
                             key={treatment.id}
                             treatment={treatment}
+                        // displayTreatmentDetails={displayTreatmentDetails}
                         ></Treatment>)
                     }
                 </div>
