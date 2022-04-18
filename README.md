@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Project Name: UNITREAT
+## It's an psychologist personal web application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site [UNITREAT](https://unitreat-2da99.web.app/).
+
+## Thechnology Used
+* React Js
+* JSX
+* React Bootstrap
+* React Fontawesome
+* Firebase
+* React AOS animation library
+* React Router
+* React hot toast
 
 ## Available Scripts
 

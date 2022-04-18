@@ -15,7 +15,7 @@ const Treatment = ({ treatment, displayTreatmentDetails }) => {
 
     }
     return (
-        <div data-aos="zoom-out-left" className='g-3 col-sm-12 col-md-6 col-lg-4'>
+        <div data-aos="zoom-out-up" className='g-3 col-sm-12 col-md-6 col-lg-4'>
             <Card className='' >
                 <Card.Img variant="top" src={picture} />
                 <Card.Body>

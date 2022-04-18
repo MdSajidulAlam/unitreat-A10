@@ -30,10 +30,9 @@ const Catagories = () => {
                     <p>A – Z OF ISSUES</p>
                 </div>
             </div>
-            <div data-aos="fade-left"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
-                data-aos-duration="500" className='col-lg-4 col-sm-12 business-catagory'>
+            <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500" className='col-lg-4 col-sm-12 business-catagory'>
                 <div className='text-white p-5'>
                     <h1>For Business</h1>
                     <p>You can me if your child, teenager or family is going through difficulties.</p>

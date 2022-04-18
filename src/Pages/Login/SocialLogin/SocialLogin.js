@@ -10,10 +10,10 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const SocialLogin = () => {
     const navigate = useNavigate()
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    const [signInWithGithub, user1, loading1, githubError] = useSignInWithGithub(auth);
+    const [signInWithGoogle, googleUser, googleLoading, error] = useSignInWithGoogle(auth);
+    const [signInWithGithub, githubUser, githubLoading, githubError] = useSignInWithGithub(auth);
 
-    if (loading || loading1) {
+    if (googleLoading || githubLoading) {
         return <Loading></Loading>
     }
 
@@ -21,7 +21,7 @@ const SocialLogin = () => {
         toast.error('Something went wrong')
     }
 
-    if (user || user1) {
+    if (googleUser || githubUser) {
         navigate('/home')
     }
     return (
@@ -35,7 +35,7 @@ const SocialLogin = () => {
                 <button onClick={() => signInWithGoogle()} className='w-25 p-2 border mx-3'>
                     <img style={{ width: "30px" }} src={google} alt="" />
                 </button>
-                <button onClick={() => signInWithGithub()} className=' w-25 p-2 border mx-3'>
+                <button onClick={() => signInWithGithub()} className='w-25 p-2 border mx-3'>
                     <img style={{ width: "30px" }} src={github} alt="" />
                 </button>
             </div>

@@ -16,7 +16,7 @@ const Banner = () => {
                     <Carousel.Caption>
                         <h3>A Strong Image of
                             Yourself is My Success</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <p>Be a strong person and overcome your depression.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,8 +27,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Am I Depressed? 6 Signs You Should Know About</h3>
+                        <p>Everyone feels low from time to time, so it’s not always easy to know when it is...</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -39,8 +39,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3 >How to Talk About Your Mental Health</h3>
+                        <p>You’ve lost interest in activities that you used to enjoy. Perhaps you have been seeing less of your friends or family</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
