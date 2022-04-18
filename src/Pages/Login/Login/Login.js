@@ -6,6 +6,7 @@ import Loading from '../../Shared/Loading/Loading';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
 import toast, { Toaster } from 'react-hot-toast';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Login = () => {
@@ -87,6 +88,7 @@ const Login = () => {
             <p className='mt-3'>New to Unitreat?<Link to='/signup' className='text-primary text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
             <p className='mt-3'>Forget password?<button className='text-primary text-decoration-none btn btn-link' onClick={resetPassword}>Reset Password</button></p>
             <Toaster />
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
