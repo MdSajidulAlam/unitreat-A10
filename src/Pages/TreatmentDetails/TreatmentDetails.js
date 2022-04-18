@@ -19,7 +19,7 @@ const TreatmentDetails = () => {
             <div className='text-center mt-5 row'>
 
                 <div className='col-lg-6 col-sm-12'>
-                    <img src={targetTreatment.picture} alt="" />
+                    <img className='w-75' src={targetTreatment.picture} alt="" />
                     <h4>Name of service: {targetTreatment.name}</h4>
                     <p>Description : {targetTreatment.about}</p>
                     <p className='fw-bold'>Price :{targetTreatment.price}</p>
