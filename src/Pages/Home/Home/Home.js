@@ -1,12 +1,13 @@
 import React from 'react';
-import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
 import Treatments from '../Treatments/Treatments';
+import Catagories from './Catagories/Catagories';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <Catagories></Catagories>
             <Treatments></Treatments>
         </div>
     );

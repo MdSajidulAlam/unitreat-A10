@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import useTreatments from '../../hooks/useTreatments/useTreatments';
 
 const TreatmentDetails = () => {
     const [treatments] = useTreatments()
     const { treatmentdetailsId } = useParams()
-    // console.log(treatmentdetailsId);
-    const matchTreatment = treatments.find(treatment => treatment.id === treatmentdetailsId)
-    console.log(matchTreatment);
+    const [target, setTarget] = useState({})
+
+    useEffect(() => {
+        if (treatments.length > 0) {
+            const matchTreatment = treatments.find(treatment => treatment.id === treatmentdetailsId)
+            setTarget(matchTreatment)
+        }
+    }, [treatments])
     return (
         <div>
             <div className='text-center'>

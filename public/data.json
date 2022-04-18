@@ -1,21 +1,21 @@
 [
     {
         "id": "1",
-        "price": 2,
+        "price": 500,
         "picture": "https://i.ibb.co/74P1HvX/img-post-gallery-02-420x280.jpg",
         "name": "Treating Depression",
         "about": "Depression is a medical condition that affects your mood and ability to function."
     },
     {
         "id": "2",
-        "price": 2,
+        "price": 300,
         "picture": "https://i.ibb.co/pQyLLj3/img-post-blog-01-420x280.jpg",
         "name": "Anxiety Disorder",
         "about": "Anxiety disorders can be a serious illness and have long term problems"
     },
     {
         "id": "3",
-        "price": 2,
+        "price": 400,
         "picture": "https://i.ibb.co/4t8sdQv/img-post-blog-02-420x280.jpg",
         "name": "Couple Therapy",
         "about": "Couples’ therapy is a form of therapy in which a couple works with a therapist"

@@ -12,6 +12,7 @@ import TreatmentDetails from './Pages/TreatmentDetails/TreatmentDetails';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Blogs from './Pages/Blogs/Blogs';
 import Footer from './Pages/Shared/Footer/Footer';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='/checkout' element={
           <RequireAuth>
             <Checkout></Checkout>
