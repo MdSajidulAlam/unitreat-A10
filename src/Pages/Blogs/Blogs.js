@@ -31,7 +31,6 @@ const Blogs = () => {
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
-            <Footer></Footer>
         </div>
     );
 };

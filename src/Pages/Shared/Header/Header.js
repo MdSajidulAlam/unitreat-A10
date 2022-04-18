@@ -15,12 +15,12 @@ const Header = () => {
         // <NavLink to="/shop" style={({ isActive }) => isActive ? { color: 'orange' } : { color: 'white' }}>Shop</NavLink>
         <Navbar collapseOnSelect sticky='top' expand="lg" bg="white" >
             <Container>
-                <Navbar.Brand className='text-dark fw-bold' as={Link} to="/home">UNITREAT</Navbar.Brand>
+                <Navbar.Brand className='text-dark fw-bold mr-3' as={Link} to="/home">UNITREAT</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="">
                         <Nav.Link className='text-dark' as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link className='text-dark' as={Link} to='/treatments' href="home#treatments">Treatments</Nav.Link>
+                        {/* <Nav.Link className='text-dark' as={Link} to='/treatments' href="home#treatments">Treatments</Nav.Link> */}
 
                     </Nav>
                     <Nav>

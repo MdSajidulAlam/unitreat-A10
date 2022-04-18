@@ -11,6 +11,7 @@ import Checkout from './Pages/Checkout/Checkout/Checkout';
 import TreatmentDetails from './Pages/TreatmentDetails/TreatmentDetails';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Blogs from './Pages/Blogs/Blogs';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

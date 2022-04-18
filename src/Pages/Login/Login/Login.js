@@ -15,7 +15,6 @@ const Login = () => {
     const location = useLocation()
 
     const from = location.state?.from?.pathname || "/";
-    let errorElement;
 
     const [
         signInWithEmailAndPassword,
@@ -35,6 +34,7 @@ const Login = () => {
         // errorElement = <p className='text-danger'>Error: {error?.message} </p>
     }
     if (user) {
+
         navigate(from, { replace: true });
     }
     const handleSubmit = e => {
@@ -46,14 +46,17 @@ const Login = () => {
         if (!validEmail) {
             toast.error('Please enter a valid email', { id: "error" })
         }
-        signInWithEmailAndPassword(email, password)
+        else {
+            signInWithEmailAndPassword(email, password)
+            toast.success('Login Successful')
+        }
     }
 
     const resetPassword = async () => {
         const email = emailRef.current.value
         if (email) {
             await sendPasswordResetEmail(email);
-            toast.success('Sent email', { id: "error" })
+            toast.success('Email Sent', { id: "error" })
         }
         else {
             toast.error('Please enter your email', { id: "error" })
@@ -83,7 +86,6 @@ const Login = () => {
             </Form>
             <p className='mt-3'>New to Unitreat?<Link to='/signup' className='text-primary text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
             <p className='mt-3'>Forget password?<button className='text-primary text-decoration-none btn btn-link' onClick={resetPassword}>Reset Password</button></p>
-            {errorElement}
             <Toaster />
         </div>
     );
